@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      /* background-color: green; */
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+    .container{
+      /* background-color: yellow; */
+      margin-top: 100px;
+      background-image: linear-gradient(to right, aqua,yellow,rgb(122, 122, 201));
+      border-radius: 50px;
+      height: 500px;
+      width: 500px;
+      display: flex;
+      /* text-align: center; */
+      /* justify-content: center; */
+      flex-direction: column;
+      
+    }
+    .container:hover{
+      background-image: linear-gradient(to left , aqua, yellow, rgb(118, 118, 175));
+    }
+    .upperdiv{
+      margin-top: 20px;
+      display: flex;
+      width: 350px;
+      margin-left: 100px;
+      color: rgb(4, 4, 4);
+      font-weight: bold;
+      /* flex-direction: row; */
+
+    }
+    .innerdiv{
+      margin-left: 150px;
+      width: 200px;
+      /* background-color: aqua; */
+      margin-top: 30px;
+      margin-bottom: 170px;
+      display: flex;
+      font-size: large;
+      flex-direction: column;
+    }
+    
+    a{
+      padding: 10px;
+      font-weight: bold;
+      background-color: white;
+      margin: 5px;
+      /* text-shadow: 10px; */
+
+      text-decoration: none;
+    }
+    a:hover{
+      letter-spacing: 10px;
+      transform: 10sec;
+
+      background-color:black;
+      color: gold;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="upperdiv">
+        <p style="font-size:30px;"> Welcome to food Donate <b>(white code)</b></p>
+        <!-- <p style="font-size:30px;"></p>>white_code</p> -->
+      </div>
+      <div class="innerdiv">
+        <br><p style="font-size: 35px; font-weight: bold;">Login As</p>
+        <a href="signin.php">USER</a>
+        <a href="admin/signin.php">ADMIN</a>
+        <a href="delivery/deliverysignup.php">DELIVERY</a>
+        
+      </div>
+    </div>
+</body>
+</html>
